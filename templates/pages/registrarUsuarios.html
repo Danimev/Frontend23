@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuarios</title>
+    <link rel="stylesheet" href="../../statics/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registrar Usuario y Mascota</h1>
+        <nav>
+            <a href="../Home.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registerUserForm">
+            <h3>Datos del Usuario</h3>
+            <label for="userName">Nombre del Usuario:</label>
+            <input type="text" id="userName" name="userName" placeholder="Nombre de usuario" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="1234567890" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <h3>Datos de la mascota</h3>
+            <label for="petName">Nombre de la mascota:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="petType">Tipo de mascota:</label>
+            <select id="petType" name="petType" required>
+                <option value="">Selecciona una opción</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hámster</option>
+                <option value="ave">Ave</option>
+              </select>
+
+            <label for="petRaza">Raza de la mascota:</label>
+            <input type="text" id="petRaza" name="petRaza" required>
+
+
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+
+    <script src="../../statics/js/app.js"></script>
+</body>
+</html>
